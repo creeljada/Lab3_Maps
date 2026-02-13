@@ -6,17 +6,24 @@
     <title>Colorado River Maps</title>
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        #map { height: 600px; }
+        #map, #choropleth, #proportional { height: 600px; margin-bottom: 1rem; }
     </style>
 
     <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 </head>
 <body>
     <h1>Javascript Maps</h1>
+
+    <h2>Dam Storage - Proportional Symbol Map</h2>
+    <div id="proportional"></div>
+
+    <h2>Dam Density by State - Choropleth Map</h2>
+    <div id="choropleth"></div>
+
     <script src="creel.js"></script>
 </body>
 </html>
